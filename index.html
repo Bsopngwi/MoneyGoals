@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Financial Goal Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Financial Goal Tracker</h1>
+    <div id="setupPage">
+        <label for="initialAmount">Initial Amount ($):</label><br>
+        <input type="number" id="initialAmount" required><br>
+        <label for="targetAmount">Target Amount ($):</label><br>
+        <input type="number" id="targetAmount" required><br>
+        <button onclick="startTracking()">Start Tracking</button>
+    </div>
+    <div id="trackingPage" style="display: none;">
+        <div id="jarContainer"></div>
+        <label for="semiMonthlySaving">Semi-Monthly Saving ($):</label><br>
+        <input type="number" id="semiMonthlySaving"><br>
+        <button onclick="addSavings()">Add Savings</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
